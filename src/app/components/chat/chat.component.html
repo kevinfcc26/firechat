@@ -27,5 +27,17 @@
         </p>
     </div> -->
 </div>
+<div>
+    <div class="row ">
+        <div class="col-md-0">
+            <input class="form-control m-1" type="text" name="mensaje" [(ngModel)]="mensaje" (keyup.enter)="enviarMensaje()" placeholder="Enviar mensaje">
 
-<input class="form-control m-0" type="text" name="mensaje" [(ngModel)]="mensaje" (keyup.enter)="enviarMensaje()" placeholder="Enviar mensaje">
+        </div>
+        <div class="col text-right">
+            <button class=" btn btn badge-primary" type="button" (click)="enviarMensaje()">
+                <i class="far fa-paper-plane"></i>
+            </button>
+
+        </div>
+    </div>
+</div>
